@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  overflow: hidden;
+}
+body,html{
+  width: 100%;
+  height: 100%;
+
+}
+body{
+  background: url("Netflix-Background.jpg");
+  z-index : -1;
+
+}
+
+
+span{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+svg{
+
+  align-self: flex-start;
+  padding: 8px;
+  width: 500px;
+  height: 100px;
+
+}
+
+li {
+    float: left;
+
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.li a:hover {
+    background-color: grey;
+}
+
+#background{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-direction: column;
+  background-color: black;
+  opacity: 0.71;
+  -moz-background-size: cover;
+  background-size: cover;
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+z-index: 1;
+}
+
+
+h1{
+font-size: 60px;
+color: white;
+z-index: 1;
+padding: 0;
+
+}
+
+h3{
+   padding-bottom: 15px;
+}
+
+
+@media screen and (max-height: 270px) {
+     h3{
+        padding-bottom: 9px;
+    }
+
+    h1{
+      padding-top: 20px;
+      padding-bottom: 2px;
+      font-size: 40px;
+    }
+
+    #background{
+      justify-content: flex-end;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+  h1{
+    padding-top: 20px;
+    padding-bottom: 2px;
+    font-size: 40px;
+  }
+}
+button{
+    background: white;
+    color: red;
+    border-radius: 39px;
+
+    border: solid white 1px;
+    font-size: 15px;
+    height: 40px;
+    width: 90px;
+
+    animation-name: bounce;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+button:hover{
+      border: solid red 1px;
+    background: red;
+    color:white;
+transition: all .3s ease-in-out;
+}
+
+
+  @keyframes bounce {
+
+      0%   {bottom:  20px;}
+      25%  {bottom:  15px;}
+      50%  {bottom:  10px;}
+      100% {bottom:  20px;}
+  }
