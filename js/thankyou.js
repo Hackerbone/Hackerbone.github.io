@@ -2,6 +2,7 @@
 'Thank you for your contributions!',
 'Merci pour vos contributions!',
 'आपके योगदानों के लिए धन्यवाद',
+'உங்கள் பங்களிப்பிற்கு நன்றி!',
 'Dziękujemy za Twój wkład!',
 'Danke für Ihre Beiträge!',
 'Gracias por sus aportaciones!', 
