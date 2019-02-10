@@ -17,3 +17,12 @@ body{
     z-index:-2;
     transform:translateY(-800px);
 }
+
+a{
+    color:white;
+}
+
+.frame__github{
+    margin-left: 3.4%;
+    padding-bottom: 10%: 
+}
