@@ -1,0 +1,170 @@
+@font-face {
+  font-family: Panther;
+src: url(PantherV01.ttf);
+}
+*{
+  font-family: "Roboto" sans-serif;
+  padding :0;
+  margin: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+
+
+p, li{
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+
+
+
+
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #5732ad;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(to bottom right, #4776E6, #8E54E9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#particles-js .name{
+  font-size: 60px;
+  font-family: 'Pacifico', cursive;
+  color:white;
+ }
+ #particles-js .username{
+   font-family: Panther !important;
+   padding-top: 10px;
+   overflow: hidden;
+   border-right: .15em solid white;
+   white-space: normal;
+   font-size: 30px;
+   letter-spacing:  .15em;
+   animation:
+     typing 3.5s steps(40, end),
+     blink-caret .75s step-end infinite ;
+   padding-left: 10px;
+   color:white;
+ }
+
+ @keyframes typing {
+   from { width: 0 }
+   to { width: 100% }
+ }
+
+
+ @keyframes blink-caret {
+   from, to { border-color: transparent; height: 30px;}
+   50% { border-color: white; }
+
+ }
+
+ #intro{
+  position: absolute;
+  overflow:hidden;
+  top: 50%;
+  left: 42%;
+  margin: -110px 0 0 -100px;
+ }
+
+ .about-me{
+  background: url("buildings.jpg") ;
+  text-align: center;
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+.about-me h1{
+  position: relative;
+  top: 20%;
+  color: white;
+  font-family: "Raleway" ;
+  font-size: 40px;
+}
+.about-me p{
+  color: white;
+  position: relative;
+  top:35%;
+  font-size: 30px;
+}
+#third-phase{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+#flex-1{
+  float: left;
+}
+
+#flex-1 p{
+  margin-top: 50px;
+  margin-left: 20px;
+  max-width: 460px;
+  min-width: 296px;
+  float:left;
+  color: black;
+}
+
+ul li{
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  margin-left: 50px;
+  max-width: 460px;
+
+  float:left;
+  color: black;
+}
+
+#flex-2 img{
+
+   background-repeat: no-repeat;
+   margin-top: 50px;
+   width: 95vw;
+   height: auto;
+}
+
+#last-phase{
+  font-family: "Roboto", sans-serif ;
+  font-size: 20px;
+  /* min-width: 315px;
+  min-height: 115px; */
+  padding: 10px;
+  background: #F4decb;
+  opacity: 0.7;
+}
+
+.ig, .fb, .telegram{
+ float: right;
+ margin-left: 10px;
+ margin-right: 10px;
+ transition: all .5s ease-in-out
+}
+
+
+.fb:hover{
+
+  transform: scale(1.4);
+}
+
+.ig:hover{
+
+  transform: scale(1.4);
+}
+
+.telegram:hover{
+
+  transform: scale(1.4);
+}
