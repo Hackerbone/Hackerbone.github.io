@@ -1,60 +1,358 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Sitaraman S</title>
     <meta name="description" content="Just 'bout me!'" />
     <meta name="keywords" content="sitaraman" />
 
     <script>
-    // document.documentElement.className = "js";
-    // var supportsCssVars = function(){ 
-    //     var e, t = document.createElement("style");
-    //     return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
     </script>
     <link href="magic.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="background"></div>
-    <div class="overlay"></div>
-    <main>
-        <div class="frame">
+    <div class="cursor text_helper"></div>
+
+    <div class="main background"></div>
+    <div class="main overlay"></div>
+    <main class="main">
+        <div class="frame main">
             <div class="frame__title-wrap">
-                <h1 class="frame__title">Sitaraman S</h1>
+                <h1 class="frame__title myname bigger">Sitaraman S</h1>
             </div>
-            <a class="frame__github" href="https://github.com/Hackerbone">| GitHub |</a>
+            <a class="frame__github bigger" href="https://github.com/Hackerbone">
+            </a>
+
             <br><br>
             <div class="frame__links">
                 <!-- Post links -->
-<a href="https://www.instagram.com/_situuu_/">
-   Instagram |
-</a>
-<a href="https://telegram.me/hackerbone">
-   Telegram |
-</a>
-<a href="https://www.facebook.com/s.sitaraman">
-    Facebook |
-</a>
-<a href="mailto:sitaraman.raghav.india@gmail.com">
-    Mail
-</a>
-<style>
+                <a class="bigger" href="https://www.instagram.com/_situuu_/">
+                    Instagram |
+                </a>
+                <a class="bigger" href="https://telegram.me/hackerbone">
+                    Telegram |
+                </a>
+                <a class="bigger" href="https://www.linkedin.com/in/sitaraman-s-b4647375/">
+                    Linkedin |
+                </a>
+                <a class="bigger" href="mailto:sitaraman.raghav.india@gmail.com">
+                    Mail
+                </a>
+                <style>
 
-</style>
+                </style>
             </div>
-            <div class="frame__demos">
-                <a href="index.html" class="frame__demo frame__demo--current">co</a>
-                <a href="#" class="frame__demo">mi</a>
-                <a href="#" class="frame__demo">ng</a>
-                <a href="#" class="frame__demo">so</a>
-                <a href="#" class="frame__demo">on</a>
+            <div class="frame__demos  bigger">
+                <button class="clickbtn" onclick="removemain()"></button>
+                <p class="bottom-text bigger">Don't worry it's not a click bait</p>
+            </div>
+
+
+
+            <div class="bigger bottom-right">
+                <p>( Or is it? )</p>
             </div>
         </div>
     </main>
+    <div id="about" class="about-container main-hidden-toggle">
+        <span class="go-back" onclick="showmain()">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </span>
+
+        <span class="go-next" onclick="showskill()">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+
+        <div class="section">
+
+            <h1 class="section-name">About</h1>
+            <div class="a-left-section">
+                <h1 class="bigger">Hey There! I'm Sitaraman</h1>
+                <h3 class="bigger">I'm an
+                    <span id="age"></span>
+                    yr old currently pursuing B.Tech from <br>
+                    <a href="https://manipal.edu/" class="college"><u>Manipal Institute of Technology, Manipal.</u></a>
+                </h3>
+                <h3 class="bigger">I am a Web Developer, Violinist and a Tech Geek.</h3>
+                <p class="bigger">
+                    Let me bring myself a cup-o-coffee &#9749; (brb) and yeah, feel free to explore my website!
+                    &#128513;
+                </p>
+
+            </div>
+            <div class="a-right-section">
+                <p class="my-img">
+
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div id="skills" class="skill-container skill-hidden">
+
+        <ul class="bg-floaters">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <span class="go-back" style="opacity: 0.95;" onclick="hideskill()">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </span>
+
+        <span class="go-next" onclick="showproject()">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+
+        <div class="skills">
+            <div class="s-header">
+                <h1 class="bigger">Skills</h1>
+                <p class="bigger">Enough about me now, lets talk about my skills.</p>
+            </div>
+            <div class="s-chart">
+                <!-- <div> -->
+                <div class="s-box bigger">
+                    <span>HTML <i class="fab fa-html5"></i> </span>
+                    <p>92%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 92%">
+                            <span class="s-show-p">92%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-box bigger">
+                    <span> CSS, Sass <i class="fab fa-css3-alt"></i> <i class="fab fa-sass"></i></span>
+                    <p>90%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 90%">
+                            <span class="s-show-p">90%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-box bigger">
+                    <span>React.JS <i class="fab fa-react"></i></span>
+                    <p>65%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 65%">
+                            <span class="s-show-p">65%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-box  bigger">
+                    <span>Javascript <i class="fab fa-js"></i></span>
+                    <p>70%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 70%">
+                            <span class="s-show-p">70%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-box bigger">
+                    <span>Bootstrap </i> <i class="fab fa-bootstrap"></i></span>
+                    <p>80%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 80%">
+                            <span class="s-show-p">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-box bigger">
+                    <span>PHP <i class="fab fa-php"></i></span>
+                    <p>54%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 54%">
+                            <span class="s-show-p">54%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="s-box bigger">
+                    <span>C++ <i class="fab fa-c-plus-plus"></i></span>
+                    <p>56%</p>
+                    <div class="s-bar">
+                        <div class="fill" style="width : 56%">
+                            <span class="s-show-p">56%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-container hidden-project">
+        <span class="go-back" style="opacity: 0.95;" onclick="hideproject()">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </span>
+        
+
+        <!-- <span class="go-next" onclick="showproject()">
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span> -->
+        <div class="projects">
+            <div class="p-header">
+                <h1>Projects</h1>
+                <p>I love to design responsive and eye-catchy websites, I have been designing websites since 2018,
+                    currently learning new frameworks like React.js</p>
+                <p>Here are some of my projects (others coming soon):</p>
+            </div>
+            <div class="project-box">
+                <div class="p-card">
+                    <h2>MASKO<br>Landing page</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <a href="https://lawmasko.com/"><button>Visit</button></a>
+                    <div class="tags">
+                        <i class="fab fa-react"></i>
+                        <i class="fab fa-js"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <!-- <div class="p-card">
+                    <h2>Heading</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <button>Visit</button>
+                    <div class="tags">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <div class="p-card">
+                    <h2>Heading</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <button>Visit</button>
+                    <div class="tags">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <div class="p-card">
+                    <h2>Heading</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <button>Visit</button>
+                    <div class="tags">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <div class="p-card">
+                    <h2>Heading</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <button>Visit</button>
+                    <div class="tags">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div>
+                <div class="p-card">
+                    <h2>Heading</h2>
+                    <img src="./images/masko.png" alt="Image">
+                    <button>Visit</button>
+                    <div class="tags">
+                        <i class="fab fa-php"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript">
+        var curYear = new Date().getFullYear();
+        var born = 2002;
+        console.log(curYear);
+        document.getElementById("age").innerHTML = (curYear - born);
+
+        const cursor = document.querySelector('.cursor');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.pageX + 'px';
+            cursor.style.top = e.pageY + 'px'
+        });
+        $(document).ready(() => {
+            setTimeout(()=>{
+                $('.cursor').removeClass('text_helper');
+            }, 4000);
+            $('.bigger').mouseenter(() => {
+                $('.cursor').css({
+                    "transform": "scale(5)"
+                });
+            })
+
+            $('.bigger').mouseleave(() => {
+                $('.cursor').css({
+                    "transform": "scale(1)"
+                });
+
+            })
+        });
+
+        function removemain() {
+            $(".section-name").show(100);
+            $(".main").fadeOut(200);
+            $(".main-hidden-toggle").fadeIn(500);
+            $("canvas").fadeOut();
+        }
+
+        function showmain() {
+            $(".section-name").hide(100);
+            $(".main-hidden-toggle").fadeOut(200);
+            $(".main").fadeIn(200);
+            $("canvas").fadeIn();
+        }
+
+        function showskill() {
+            $('.fill').addClass("w-0");
+            $("#about").fadeOut(200);
+            $(".skill-container").fadeIn(200);
+            $('.fill').removeClass("w-0");
+
+        }
+
+        function hideskill() {
+            $("#about").fadeIn(200);
+            $(".skill-container").fadeOut(200);
+        }
+
+
+        function showproject() {
+            $(".skill-container").fadeOut(200);
+            $(".project-container").removeClass('hidden-project');
+        }
+
+        function hideproject() {
+            $(".skill-container").fadeIn(200);
+            // $(".project-container").fadeOut(200);
+            $(".project-container").addClass('hidden-project');
+        }
+    </script>
     <script type="text/javascript" src="magic.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
